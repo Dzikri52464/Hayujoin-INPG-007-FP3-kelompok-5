@@ -24,6 +24,12 @@ h1.text-black {
     height: 120px;
 }
 
+.nav-link.active {
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%) !important;
+    border: none !important;
+    color: #fff !important;
+}
+
 .heading {
     font-size: 97px;
 }
@@ -31,4 +37,21 @@ h1.text-black {
 .img-main {
     position:absolute;
     right: 0px !important;
+    height: 565px;
+}
+
+hr {
+    border: 3px solid #E73587 !important;
+    border-radius: 5px !important;
+    width: 100px;
+}
+
+#about {
+    background: linear-gradient(to top, #020E35 50%, white 0%); 
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 40px;
+    }    
 }
