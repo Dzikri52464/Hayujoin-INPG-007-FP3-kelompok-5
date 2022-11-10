@@ -8,6 +8,7 @@
     <link rel="icon" type="images/x-icon" href="assets/icon/iconColored.png">
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
 </head>
 <body>
     <nav id="navbar" class="navbar navbar-expand-lg bg-white border-bottom border-2 shadow-sm fixed-top">
@@ -49,8 +50,8 @@
     <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
         <section id="home">
             <div class="container py-5 my-5">
-                <div class="row mb-5 p-5">
-                    <div class="col-12 col-xl-6 text-center text-xl-start">
+                <div class="row my-5 py-3 px-5">
+                    <div class="col-12 col-xl-6 text-center text-xl-start bg-white rounded-0 bg-opacity-75 py-5">
                         <h1 class="heading text-black mb-3">We Create Content that ranks</h1>
                         <button class="btn-primary text-white py-2 px-4">SEE OUR WORKS</button>
                     </div>
@@ -58,44 +59,95 @@
                         <img src="assets/svg/Main.svg" alt="Our Content" class="img-main">
                     </div>
                 </div>
-                <div class="row px-0 py-5 px-md-5">
-                    <div class="mt-5 pt-5">
-                        <h2 class="h2 fs-1 text-center mb-3 mx-auto">About Us</h2>
-                        <hr class="mx-auto">
-                        <p class="text-center fs-5 w-75 mx-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi explicabo velit aliquam eius aspernatur tempora cupiditate eos consequatur distinctio nobis dolorem, nisi sequi possimus voluptatem sit magni iusto optio placeat, architecto nulla totam assumenda, officiis quam. Alias nihil assumenda et?</p>
-                    </div>
-                </div>
             </div>
         </section>
         
         <section id="about">
             <div class="container py-5 my-5">
+                <div class="row px-0 py-3 px-md-3 bg-white rounded-0 bg-opacity-75">
+                    <div class="mt-5 pt-5">
+                        <h2 class="h2 fs-1 text-center mb-3 mx-auto">About Us</h2>
+                        <hr class="mx-auto">
+                        <p class="text-center w-75 mx-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi explicabo velit aliquam eius aspernatur tempora cupiditate eos consequatur distinctio nobis dolorem, nisi sequi possimus voluptatem sit magni iusto optio placeat, architecto nulla totam assumenda, officiis quam. Alias nihil assumenda et?</p>
+                    </div>
+                </div>
                 <h2 class="h2 fs-1 text-center mb-3 mx-auto">Our Valuable Services</h2>
                 <hr class="mx-auto">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="assets/svg/AppDev.svg" class="d-block w-100" alt="...">
+                <div class="row">
+                    <div class="splide">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <img src="assets/svg/chevron-left-solid.svg" alt="prev" class="arrow-slider mx-auto">
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <img src="assets/svg/chevron-right-solid.svg" alt="prev" class="arrow-slider mx-auto">
+                            </button>
                         </div>
-                        <div class="carousel-item">
-                            <img src="assets/svg/WebDev.svg" class="d-block w-100" alt="...">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="col-sm-4 splide__slide m-2">
+                                    <div class="card bg-warning text-center rounded-0 border-0">
+                                        <img src="assets/svg/AppDev.svg" alt="AppDev" class="card-img">
+                                        <div class="card-body">
+                                            <h5 class="card-title">App Development</h5>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <a href="#" class="btn btn-primary rounded-0">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 splide__slide m-2">
+                                    <div class="card bg-info text-center rounded-0 border-0">
+                                        <img src="assets/svg/WebDev.svg" alt="WebDev" class="card-img">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Web Development</h5>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <a href="#" class="btn btn-primary rounded-0">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 splide__slide m-2">
+                                    <div class="card bg-danger text-center rounded-0 border-0">
+                                        <img src="assets/svg/UIX.svg" alt="UIX" class="card-img">
+                                        <div class="card-body">
+                                            <h5 class="card-title">UI UX Design</h5>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <a href="#" class="btn btn-primary rounded-0">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 splide__slide m-2">
+                                    <div class="card bg-secondary text-white text-center rounded-0 border-0">
+                                        <img src="assets/images/React.png" alt="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Software Consultant</h5>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <a href="#" class="btn btn-primary rounded-0">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 splide__slide m-2">
+                                    <div class="card bg-white text-center rounded-0">
+                                        <img src="assets/images/3169210.jpg" alt="Data" class="card-img">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Data Analyst</h5>
+                                            <p class="card-text">Get your data analyzed by professional</p>
+                                            <a href="#" class="btn btn-primary rounded-0">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
         </section>
+
+        <!-- Tambah codenya disini dzik -->
     </div>
     
     <script src="scripts/script.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
 </body>
 </html>

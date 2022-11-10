@@ -42,16 +42,64 @@ h1.text-black {
 
 hr {
     border: 3px solid #E73587 !important;
+    color: #E73587 !important;
     border-radius: 5px !important;
     width: 100px;
+}
+
+.splide__arrow.splide__arrow--next, .splide__arrow.splide__arrow--prev {
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%) !important;
+    border: 1px solid #fff !important;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.arrow-slider {
+    height: 20px !important;
+}
+
+div.card {
+    height: 100%;
+}
+
+.card.bg-danger {
+    background: #FEEFF0 !important;
+}
+
+.card.bg-warning {
+    background: #FDF8E3 !important;
+}
+
+.card.bg-info {
+    background: #F0F3FA !important;
 }
 
 #about {
     background: linear-gradient(to top, #020E35 50%, white 0%); 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .heading {
         font-size: 40px;
     }    
+
+    #home {
+        background-image: url('../assets/svg/BG.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .heading {
+        font-size: 40px;
+    }    
+
+    #home {
+        background-image: url('../assets/svg/BgSmall.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 }
