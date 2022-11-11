@@ -74,6 +74,18 @@ div.card {
     background: #F0F3FA !important;
 }
 
+.modal-content.bg-danger {
+    background: #FEEFF0 !important;
+}
+
+.modal-content.bg-warning {
+    background: #FDF8E3 !important;
+}
+
+.modal-content.bg-info {
+    background: #F0F3FA !important;
+}
+
 #about {
     background: linear-gradient(to top, #020E35 50%, white 0%); 
 }
