@@ -154,8 +154,9 @@
                 <div class="row my-5 py-3 px-0 px-lg-5">
                     <div class="col-md-6">
                         <img class="img-thumbnail" src="assets/images/dzikri1.png" alt="Web Design">
+                        <hr class="d-block d-md-none mx-auto">
                     </div>
-                    <div class="col-md-6 text-white text-center text-md-start">
+                    <div class="col-md-6 text-white text-center text-md-start order-first order-md-last">
                         <h2>Web Design Assigment 1</h2>
                         <h6 class="mb-4">By : Dzikri amrillah</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -169,13 +170,15 @@
                     </div>
                     <div class="col-md-6">
                         <img class="img-thumbnail" src="assets/images/ian1.png" alt="Web Design">
+                        <hr class="d-block d-md-none mx-auto">
                     </div>
                 </div>
                 <div class="row my-5 py-3 px-5">
                     <div class="col-md-6">
                         <img class="img-thumbnail" src="assets/images/dzikri2.png" alt="Web Design">
+                        <hr class="d-block d-md-none mx-auto">
                     </div>
-                    <div class="col-md-6 text-white text-center text-md-start">
+                    <div class="col-md-6 text-white text-center text-md-start order-first order-md-last">
                         <h2>Web Design Assigment 2</h2>
                         <h6 class="mb-4">By : Dzikri amrillah</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -189,31 +192,38 @@
                     </div>
                     <div class="col-md-6">
                         <img class="img-thumbnail" src="assets/images/ian2.png" alt="Web Design">
+                        <hr class="d-block d-md-none mx-auto">
                     </div>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-primary text-white py-2 rounded-0 w-25 mx-auto">SEE ALL WORKS</button>
                 </div>
             </div>
         </section>
         
         <section id="contact">
             <div class="container my-5 py-3 px-5">
-                <form>
+                <form id="contactForm">
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <p>Questions, Comments, Concerns?</p>
-                            <h2>We’d love to hear from you!</h2>	
+                        <div class="col-12 col-lg-4">
+                            <p class="text-black">Questions, Comments, Concerns?</p>
+                            <h2 class="text-black contact-heading">We’d love to <span class="pink">hear</span> from you!</h2>	
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12">
+                        <div class="col-12 col-lg-8">
                             <div class="form-group mb-2">
-                                <p>Your Email Address</p>
-                                <input type="text" class="form-control form-control-lg" placeholder="something@website.com" name="name">
+                                <label for="email" class="form-label">Your Email Address</label>
+                                <input type="email" class="form-control form-control-lg" placeholder="something@website.com" name="email" id="email">
+                                <span class="text-danger" id="emailError"></span>
                             </div>
                             <div class="form-group mb-2">
-                                <p>Subject</p>
+                                <label for="subject" class="form-label">Subject</label>
                                 <input type="text" class="form-control form-control-lg" placeholder="Question about your article" name="subject" id="subject">
+                                <span class="text-danger" id="subjectError"></span>
                             </div>
                             <div class="form-group mb-2">
-                                <P>Message</P>
-                                <textarea class="form-control form-control-lg" placeholder="Your message starts with…" name="message"></textarea>
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control form-control-lg" placeholder="Your message starts with…" name="message" id="message"></textarea>
+                                <span class="text-danger" id="messageError"></span>
                             </div>
                             <div class="form-group mb-2">
                                 <button type="submit" class="form-control btn btn-primary fw-bold fs-5 py-2 px-4">Send a Message</button>
@@ -226,7 +236,7 @@
         
         <footer class="footer mt-auto text-white">
             <div class="container py-1">
-                <p class="m-0">2022 © All rights reserved by HayuJoin</p>
+                <p class="m-0 text-center text-md-start">2022 © All rights reserved by HayuJoin</p>
             </div>
         </footer>
     </div>

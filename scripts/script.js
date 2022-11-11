@@ -18,7 +18,7 @@ window.onload = function() {
     });
     
     splide.mount();
-
+    
     baseModal = document.getElementById('serviceModal')
     modal = new bootstrap.Modal(baseModal)
 };
@@ -187,7 +187,7 @@ function showService(title, image, desc) {
     var servTitle = document.getElementById('servTitle')
     var servImg = document.getElementById('servImg')
     var servContent = document.getElementById('servContent')
-
+    
     servTitle.innerHTML = '';
     servImg.innerHTML = '';
     servContent.innerHTML = '';
@@ -195,7 +195,7 @@ function showService(title, image, desc) {
     servImg.innerHTML = image;
     servContent.innerHTML = desc;
     modal.show();
-
+    
     var interested = document.getElementById('interested')
     interested.addEventListener('click', function() {
         var subject = document.getElementById('subject');
@@ -204,3 +204,37 @@ function showService(title, image, desc) {
         window.location.href = '#contact';
     });
 }
+
+var contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = document.getElementById('email').value;
+    var emailError = document.getElementById('emailError');
+    var subject = document.getElementById('subject').value;
+    var subjectError = document.getElementById('subjectError');
+    var message = document.getElementById('message').value;
+    var messageError = document.getElementById('messageError');
+    if( email == '' || email == null){
+        emailError.innerHTML = 'Please enter your email';
+        if( subject == '' || subject == null){
+            subjectError.innerHTML = 'Please enter a subject';
+            if( message == '' || message == null){
+                messageError.innerHTML = 'Please enter a message';
+            }
+            else {
+                messageError.innerHTML = '';
+            }
+        } else {
+            subjectError.innerHTML = '';
+        }
+    } else {
+        emailError.innerHTML = '';
+    }
+    if( email != '' && email != null && subject != '' && subject != null && message != '' && message != null){
+        emailError.innerHTML = '';
+        subjectError.innerHTML = '';
+        messageError.innerHTML = '';
+        alert('Thank you for contacting us. We will get back to you shortly.');
+        contactForm.reset();
+    }
+});

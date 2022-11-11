@@ -17,6 +17,14 @@ h1.text-black {
     color: #020E35 !important;
 }
 
+h2.text-black {
+    color: #020E35 !important;
+}
+
+p.text-black {
+    color: #020E35 !important;
+}
+
 .brand {
     top: 0px;
     position: absolute;
@@ -92,7 +100,15 @@ div.card {
 
 #portfolio{
     background:#020E35;
-    ;
+}
+
+.contact-heading {
+    font-size: 50px;
+    color: #020E35;
+}
+
+.pink {
+    color: #E73587;
 }
 
 .footer {
