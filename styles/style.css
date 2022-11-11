@@ -86,15 +86,24 @@ div.card {
     background: #F0F3FA !important;
 }
 
-#about {
+#services {
     background: linear-gradient(to top, #020E35 50%, white 0%); 
+}
+
+#portfolio{
+    background:#020E35;
+    ;
+}
+
+.footer {
+    background: #020E35;
 }
 
 @media screen and (max-width: 992px) {
     .heading {
         font-size: 40px;
     }    
-
+    
     #home {
         background-image: url('../assets/svg/BG.svg');
         background-repeat: no-repeat;
@@ -107,27 +116,11 @@ div.card {
     .heading {
         font-size: 40px;
     }    
-
+    
     #home {
         background-image: url('../assets/svg/BgSmall.svg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
-}
-#PORTFOLIO{
-    background:#020E35;
-    ;
-}
-.text-1{
-    text-align: left;
-}
-.text-2{
-    text-align: right;
-}
-.footer{
-    background-color: #020E35;
-    text-align: justify;
-    color: #F0F3FA;
-    margin-top: 80px;
 }
