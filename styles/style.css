@@ -115,6 +115,29 @@ div.card {
     background: #020E35;
 }
 
+h3.text-center {
+    color: #020E35;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+a:visited { 
+    text-decoration: none; 
+}
+
+
+a:hover { 
+    text-decoration: none; 
+}
+
+
+a:active { 
+    text-decoration: none; 
+}
+
 @media screen and (max-width: 992px) {
     .heading {
         font-size: 40px;

@@ -53,7 +53,7 @@
                 <div class="row my-5 py-3 px-5">
                     <div class="col-12 col-xl-6 text-center text-xl-start bg-white rounded-0 bg-opacity-75 py-5">
                         <h2 class="heading text-black mb-3">We Create Content that ranks</h2>
-                        <a href="#portfolio" class="btn btn-primary text-white py-2 px-4 rounded-0">SEE OUR WORKS</a>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#projectModal" class="btn btn-primary text-white py-2 px-4 rounded-0">SEE OUR WORKS</button>
                     </div>
                     <div class="col-6 d-none d-xl-block">
                         <img src="assets/svg/Main.svg" alt="Our Content" class="img-main">
@@ -239,6 +239,36 @@
                 <p class="m-0 text-center text-md-start">2022 © All rights reserved by HayuJoin</p>
             </div>
         </footer>
+    </div>
+    
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Our Latest Work</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-6 rounded mx1">
+                            <a target="_blank" href="https://thunderous-raindrop-ae2cf1.netlify.app/">
+                                <img src="assets/images/FP1.jpeg" alt="FinalProject1" class="img-fluid rounded">
+                                <h3 class="text-center pt-4">HayuJoin Company Profile</h3>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 rounded mx1">
+                            <a target="_blank" href="https://hayujoin-kelompok-5.netlify.app/">
+                                <img src="assets/images/FP2.jpeg" alt="FinalProject2" class="img-fluid rounded">
+                                <h3 class="text-center pt-4">HayuJoin Company</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
     
     <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="servTitle" aria-hidden="true">
