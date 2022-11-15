@@ -151,6 +151,13 @@ a:active {
     opacity: 1;
 }
 
+.toastTitle{
+    background: -webkit-linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @media screen and (max-width: 992px) {
     .heading {
         font-size: 40px;

@@ -21,6 +21,8 @@ window.onload = function() {
     
     baseModal = document.getElementById('serviceModal')
     modal = new bootstrap.Modal(baseModal)
+    baseToast = document.getElementById('successToast')
+    toast = new bootstrap.Toast(baseToast)
 };
 
 var app = {
@@ -212,7 +214,7 @@ contactForm.addEventListener('submit', function(e) {
     var emailError = document.getElementById('emailError');
     var subject = document.getElementById('subject').value;
     var subjectError = document.getElementById('subjectError');
-    var message = document.getElementById('message').value;
+    var message = document.getElementById('msgForm').value;
     var messageError = document.getElementById('messageError');
     if( email == '' || email == null){
         emailError.innerHTML = 'Please enter your email';
@@ -234,7 +236,7 @@ contactForm.addEventListener('submit', function(e) {
         emailError.innerHTML = '';
         subjectError.innerHTML = '';
         messageError.innerHTML = '';
-        alert('Thank you for contacting us. We will get back to you shortly.');
+        toast.show();
         contactForm.reset();
     }
 });
